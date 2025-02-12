@@ -35,6 +35,7 @@ function App() {
       <div>
         <h2>Environment Variables</h2>
         <p>NEXT_PUBLIC_VARIABLE_NAME: {import.meta.env.VITE_NEXT_PUBLIC_VARIABLE_NAME}</p>
+        <p>//// NEXT_PUBLIC_VARIABLE_NAME ////: {process.env.VITE_NEXT_PUBLIC_VARIABLE_NAME}</p>
         <p>REACT_APP_VARIABLE_NAME: {import.meta.env.VITE_REACT_APP_VARIABLE_NAME}</p>
       </div>
     </>
