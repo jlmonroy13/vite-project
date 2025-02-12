@@ -7,8 +7,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   // Log environment variables
-  console.log('NEXT_PUBLIC variables:', import.meta.env.NEXT_PUBLIC_VARIABLE_NAME);
-  console.log('REACT_APP variables:', import.meta.env.REACT_APP_VARIABLE_NAME);
+  console.log('NEXT_PUBLIC variables:', import.meta.env.VITE_NEXT_PUBLIC_VARIABLE_NAME);
+  console.log('REACT_APP variables:', import.meta.env.VITE_REACT_APP_VARIABLE_NAME);
 
   return (
     <>
@@ -30,8 +30,13 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        HELLO THERE
       </p>
+      <div>
+        <h2>Environment Variables</h2>
+        <p>NEXT_PUBLIC_VARIABLE_NAME: {import.meta.env.VITE_NEXT_PUBLIC_VARIABLE_NAME}</p>
+        <p>REACT_APP_VARIABLE_NAME: {import.meta.env.VITE_REACT_APP_VARIABLE_NAME}</p>
+      </div>
     </>
   )
 }
