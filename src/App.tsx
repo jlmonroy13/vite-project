@@ -6,6 +6,10 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  // Log environment variables
+  console.log('NEXT_PUBLIC variables:', process.env.NEXT_PUBLIC_VARIABLE_NAME);
+  console.log('REACT_APP variables:', process.env.REACT_APP_VARIABLE_NAME);
+
   return (
     <>
       <div>
